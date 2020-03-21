@@ -1,0 +1,187 @@
+/*Don't forget to add Font Awesome CSS : "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"*/
+.Register{
+    background-color: skyblue;
+}
+.form {
+    margin-left:auto;
+    margin-right:auto;
+    /* width: 50%; */
+    height: 600px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 65px;
+    padding-right:65px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 30px;
+    background-clip: padding-box;
+    background: darkblue; 
+    overflow: hidden; 
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-content:center;
+    color: white;
+}
+.button {
+  background: #3A5C86;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+ margin-bottom:20px;
+  padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right:15px;
+  outline: none;
+   color: #fff;
+  text-decoration: none;
+  font-size: 1.45em;
+  box-sizing: border-box;
+  transition: 0.3s;
+  text-align:center;
+  text-justify:center;
+  border-radius: 25px;
+    border: 2px ;
+    width: 300px;
+    height: 15px;  
+}
+.header{
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  margin-bottom:35px;  
+  margin-top:80px;
+  font-family:Source Serif Pro;
+  font-size:32;
+
+}
+.clever{
+  border: 2px solid #aaa;
+  border-radius: 4px;
+ margin-bottom:20px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-radius: 25px;
+    border: 2px ;
+  font-family:Source Sans Pro;
+  font-size:16;
+    padding: 30px 60px; 
+    width: 400px;
+    height: 45px;  
+ 
+}
+
+.clever:focus {
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 80px;
+}
+input[type="password"] {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+ margin-bottom:20px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-radius: 25px;
+    border: 2px ;
+    padding: 30px 60px; 
+    width: 400px;
+    height: 45px;  
+ 
+}
+
+input[type="password"]:focus {
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 80px;
+}
+.inputWithIcon input[type="password"] {
+  padding-left: 80px;
+}
+
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 30px;
+  top: 18px;
+  padding: 9px 8px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+.inputWithRadio{
+  
+}
+div .white {
+background-color: white;
+color: orange;
+height: fit-content;
+font-weight: 400;
+width: 150px;
+}
+div .orange {
+background-color: orange;
+color:#fff;
+height: fit-content;
+font-weight: 400;
+width: fit-content;
+margin-left: 5px;
+
+}
+.register{
+    display: flex;
+    justify-content: between;
+}
+div .white:clicked{
+    background: orange;
+}
+div .submit {
+background-color: #0f0;
+justify-content: center !important;
+
+margin-left: 200px;
+
+}
+.register {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.register div {
+  border-radius: 5px;
+}
+.register .login1{
+  background-color: orange;
+  color: white;
+}
+.register .change {
+  background-color: orange;
+  color: white;
+}
+.Link:active{
+  transition: ease-in-out;
+}

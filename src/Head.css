@@ -1,0 +1,15 @@
+.Head{
+    color: white;
+    text-align: start;
+    background-color: blue;
+    margin-top: none;
+    display: flex;
+    justify-content: space-between;
+    padding: auto 2px;
+}
+.Head h2 {
+    color: orange;
+    padding-top: 10px;
+    font-size: 24px;
+    
+}
