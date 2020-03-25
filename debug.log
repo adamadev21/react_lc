@@ -1,0 +1,18 @@
+[0322/201625.904:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0322/201625.904:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0322/201626.326:ERROR:exception_snapshot_win.cc(98)] thread ID 14716 not found in process
+[0322/201626.326:ERROR:exception_snapshot_win.cc(98)] thread ID 14252 not found in process
+[0322/201626.752:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0322/201626.764:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0322/201626.765:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0322/201627.197:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0322/201627.197:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0322/201627.197:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0322/201627.267:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0322/201627.267:ERROR:exception_snapshot_win.cc(98)] thread ID 11116 not found in process
+[0322/201627.268:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0322/201627.311:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0322/201627.312:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0322/201627.312:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0322/201627.412:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[0322/201627.412:ERROR:exception_snapshot_win.cc(98)] thread ID 3272 not found in process

@@ -1,5 +1,5 @@
 import React, {Components} from 'react';
-import './Footer.css'
+import '../../stylesheets/Footer.css'
 class Footer extends React.Component {
     render(){
         return(

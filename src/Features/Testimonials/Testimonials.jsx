@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './Testimonials.css';
-import { Link } from 'react-router-dom';
+import '../../stylesheets/Testimonials.css';
 import Testiform from './Testiform';
 import uuid from 'uuid/v4';
 const url =
@@ -15,9 +14,7 @@ class Testimonials extends Component {
     };
     this.addTestimony = this.addTestimony.bind(this);
   }
-  handleChange(evt) {
-    this.setState({ [evt.target.name]: evt.target.value });
-  }
+  
   addTestimony(testim) {
     let newTestim = { ...testim, id: uuid() };
     this.setState(state => ({

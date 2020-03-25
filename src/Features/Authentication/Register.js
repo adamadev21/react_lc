@@ -1,5 +1,5 @@
 import React, {Components}from 'react'
-import './Register.css'
+import '../../stylesheets/Register.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 const vss = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"

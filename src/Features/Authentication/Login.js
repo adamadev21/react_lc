@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
-import './Login.css'
-import './Register.css'
+import '../../stylesheets/Login.css'
+import '../../stylesheets/Register.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import {Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-class Login extends React.Component {
+class Login extends Component {
     render(){
         return (
     <div className='Login container'>

@@ -1,8 +1,8 @@
-import React, {Components} from 'react';
-import logo from './logo-image.png'
-import './Home.css'
+import React, {Component} from 'react';
+import logo from '../../logo-image.png'
+import '../../stylesheets/Home.css'
 import 'bootstrap/dist/css/bootstrap.css';
-class Home extends React.Component {
+class Home extends Component {
     render(){
         return(
         <div className='Home'> 

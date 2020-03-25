@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./Testimonials.css";
-class Testiform extends React.Component {
+import "../../stylesheets/Testimonials.css";
+class Testiform extends Component {
   constructor(props) {
     super(props);
     this.state = { name: "", text: "", coutry: "", image: "", email: "" };
