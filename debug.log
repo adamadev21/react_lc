@@ -16,3 +16,5 @@
 [0322/201627.312:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
 [0322/201627.412:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0322/201627.412:ERROR:exception_snapshot_win.cc(98)] thread ID 3272 not found in process
+[0328/124545.070:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0329/095407.840:ERROR:crash_report_database_win.cc(428)] unexpected header

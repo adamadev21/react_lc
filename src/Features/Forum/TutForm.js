@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import '../../stylesheets/Tutform.css';
-export default class TutForm extends Component {
+import {connect} from 'react-redux';
+import {createPost} from '../ReduxConfiguration/actions'
+const mapState = state => ({
+  posts: state.posts
+})
+
+class TutForm extends Component {
   constructor(props) {
     super(props);
-    var time = new Date(),
-      date = time.toLocaleDateString() + '  ' + time.toLocaleTimeString();
-    this.state = { author: '', date: date, title: '', text: '' };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     // this.addPost = this.addPost.bind(this)
@@ -14,8 +17,7 @@ export default class TutForm extends Component {
     this.setState({ [evt.target.name]: evt.target.value });
   }
   handleSubmit(e) {
-    this.props.addPost(this.state);
-    this.setState({ author: '', date: '', title: '', text: '' });
+    this.props.createPost();
     e.preventDefault();
   }
   render() {
@@ -29,7 +31,7 @@ export default class TutForm extends Component {
           <div className="d-flex title">
             <label>Title: </label>
             <textarea
-              value={this.state.title}
+              value={this.props.posts.title}
               onChange={this.handleChange}
               name="title"
               id="title"
@@ -42,7 +44,7 @@ export default class TutForm extends Component {
           <div className="d-flex text">
             <label>Text: </label>
             <textarea
-              value={this.state.text}
+              value={this.props.posts.text}
               onChange={this.handleChange}
               name="text"
               id="title"
@@ -65,3 +67,4 @@ export default class TutForm extends Component {
     );
   }
 }
+export default connect(mapState)(TutForm);

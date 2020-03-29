@@ -1,20 +1,78 @@
-import { CREATE_POST, UPDATE_POST, DELETE_POST } from './forumConstants';
+import * as constants from './forumConstants';
 
-export const createPost = post => {
+const fetchPeopleRequest = () => {
   return {
-    type: CREATE_POST,
-    payload: post
+    type: constants.FETCH_PEOPLE_REQUEST
   };
 };
-export const updatePost = post => {
+const fetchPeopleSuccess = people => {
   return {
-    type: UPDATE_POST,
-    payload: post
+    type: constants.SAVE_PEOPLE_SUCCESS,
+    people
   };
 };
-export const deletePost = postId => {
-  return {
-    type: DELETE_POST,
-    payload: postId
+
+export const fetchPeople = () => {
+  return dispatch => {
+    dispatch(fetchPeopleRequest());
+    apiClient.loadPeople().then(people => {
+      dispatch(fetchPeopleSuccess(people));
+    });
   };
+};
+
+const savePeopleRequest = () => {
+  return {
+    type: constants.SAVE_PEOPLE_REQUEST
+  };
+};
+const savePeopleFailure = error => {
+  return {
+    type: constants.SAVE_PEOPLE_FAILURE,
+    error
+  };
+};
+const savePeopleSuccess = people => {
+  return {
+    type: constants.SAVE_PEOPLE_SUCCESS,
+    people
+  };
+};
+
+export const savePeople = people => {
+  return dispatch => {
+    dispatch(savePeopleRequest());
+    apiClient
+      .savePeople(people)
+      .then(people => {
+        dispatch(savePeopleSuccess(people));
+      })
+      .catch(error => {
+        dispatch(savePeopleFailure(error));
+      });
+  };
+};
+
+const apiClient = {
+  loadPeople: () => {
+    return {
+      then: cb => {
+        setTimeout(() => {
+          cb(JSON.parse(localStorage.people || '[]'));
+        }, 1000);
+      }
+    };
+  },
+
+  savePeople: people => {
+    const success = !!(this.count++ % 2);
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (!success) return reject(success);
+        localStorage.people = JSON.stringify(people);
+        resolve({ success });
+      }, 1000);
+    });
+  },
+  count: 1
 };
